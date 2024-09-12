@@ -1,0 +1,18 @@
+meta {
+  name: Create Goal
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/goals
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Comer Caranguejo",
+    "desiredWeeklyFrequency": 3
+  }
+}

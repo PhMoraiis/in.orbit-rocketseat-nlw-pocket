@@ -1,0 +1,18 @@
+meta {
+  name: Undo Completion Goals
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:3333/undo-goal
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "goalId": "ireed4pbd8dna1aexuog6nzq",
+    "completedAt": "2024-09-12 00:28:28.831889+00"
+  }
+}
